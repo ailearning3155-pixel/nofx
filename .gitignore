@@ -1,0 +1,63 @@
+# ─── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+Lib/
+Scripts/
+Include/
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# ─── Secrets & Config ─────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+secrets/
+
+# ─── Data & Models ────────────────────────────────────────────
+data/
+logs/
+*.log
+models/saved/*.pkl
+models/saved/*.joblib
+models/saved/training_data.csv
+
+# ─── IDE ──────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Node / Frontend ──────────────────────────────────────────
+web/node_modules/
+web/dist/
+web/.vite/
+node_modules/
+
+# ─── Database ─────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Docker ───────────────────────────────────────────────────
+.dockerignore

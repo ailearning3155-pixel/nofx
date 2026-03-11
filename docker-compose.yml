@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: apex
+      POSTGRES_PASSWORD: apex_password
+      POSTGRES_DB: apex_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - apex_postgres:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - apex_redis:/data
+
+volumes:
+  apex_postgres:
+  apex_redis:

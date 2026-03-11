@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(113,113,122,0.3); border-radius: 99px; }
+::selection { background: rgba(113,113,122,0.15); }
+.mono { font-family: 'JetBrains Mono', monospace !important; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse-dot { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }

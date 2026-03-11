@@ -1,0 +1,20 @@
+/* APEX Trading OS — Gemini Design System */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; }
+.mono { font-family: 'JetBrains Mono', monospace !important; }
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(113,113,122,0.3); border-radius: 99px; }
+::selection { background: rgba(113,113,122,0.15); }
+input, select, button { font-family: inherit; }
+/* Kill switch */
+.kill-switch { padding: 7px 14px; border-radius: 10px; border: 1px solid rgba(239,68,68,.3); background: rgba(239,68,68,.08); color: #ef4444; font-size: 12px; font-weight: 700; letter-spacing: .05em; cursor: pointer; transition: all .2s; }
+.kill-switch:hover { background: rgba(239,68,68,.18); }
+.kill-switch.active { background: #ef4444; color: #fff; border-color: #ef4444; }
+/* Loading */
+.spinner { width: 18px; height: 18px; border: 2px solid rgba(113,113,122,0.2); border-top-color: #71717a; border-radius: 50%; animation: spin .7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg) } }
+.loading { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; min-height: 200px; color: #71717a; font-size: 14px; }
+/* Recharts */
+.recharts-cartesian-grid-horizontal line, .recharts-cartesian-grid-vertical line { stroke: rgba(113,113,122,0.15) !important; }
+.recharts-text { fill: #71717a !important; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
